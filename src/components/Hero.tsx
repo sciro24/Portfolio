@@ -1,13 +1,21 @@
 import { Button } from "@/components/ui/button";
 import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import profilePic from "/profile.png"; // Importa l'immagine del profilo
 
 const Hero = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center px-6 py-20 overflow-hidden">
       <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-accent/5 to-background -z-10" />
       
-      <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
-        <div className="space-y-4">
+      <div className="max-w-4xl mx-auto text-center flex flex-col items-center space-y-8 animate-fade-in">
+        <div className="mb-4">
+          <img 
+            src={profilePic}
+            alt="Foto Profilo di Diego" 
+            className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover border-4 border-primary/10 shadow-lg"
+          />
+        </div>
+        <div className="space-y-2">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
             Hi, I'm <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Diego</span>
           </h1>
