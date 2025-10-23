@@ -4,43 +4,40 @@ import { Briefcase, GraduationCap } from "lucide-react";
 const Experience = () => {
   const workExperiences = [
     {
-      title: "Job Title",
-      company: "Company Name",
-      period: "2023 - Present",
-      description: "Brief description of responsibilities and achievements"
+      title: "Research Intern",
+      company: "Università degli Studi Roma Tre",
+      period: "2024 - 2024",
+      description: "Curricular internship"
     },
     {
-      title: "Job Title",
-      company: "Company Name",
-      period: "2021 - 2023",
-      description: "Brief description of responsibilities and achievements"
+      title: "IT Infrastructure Manager ",
+      company: "S.T.EUR",
+      period: "2022 - 2022",
+      description: "Network Implementation"
     },
     {
-      title: "Job Title",
-      company: "Company Name",
-      period: "2019 - 2021",
-      description: "Brief description of responsibilities and achievements"
+      title: "PCTO: Fideuram Intesa San Paolo",
+      company: "Fideuram",
+      period: "2018 - 2020",
+      description: "Stage"
     }
   ];
 
   const education = [
     {
-      degree: "Degree Name",
-      institution: "University/School Name",
+      degree: "Master's Degree, IA/ML ",
+      institution: "Università degli Studi Roma Tre",
+      period: "2024 - Present",
+    },
+    {
+      degree: "Bachelor's Degree, Computer Engineering",
+      institution: "Università degli Studi Roma Tre",
       period: "2020 - 2024",
-      description: "Field of study and notable achievements"
     },
     {
-      degree: "Degree Name",
-      institution: "University/School Name",
-      period: "2018 - 2020",
-      description: "Field of study and notable achievements"
-    },
-    {
-      degree: "Degree Name",
-      institution: "University/School Name",
-      period: "2015 - 2018",
-      description: "Field of study and notable achievements"
+      degree: "Computer Technical Diploma",
+      institution: "ITC Vincenzo Arangio Ruiz",
+      period: "2015 - 2020",
     }
   ];
 
@@ -89,7 +86,6 @@ const Experience = () => {
                   <h4 className="text-lg font-semibold mb-1">{edu.degree}</h4>
                   <p className="text-sm text-accent font-medium mb-2">{edu.institution}</p>
                   <p className="text-xs text-muted-foreground mb-3">{edu.period}</p>
-                  <p className="text-sm text-muted-foreground">{edu.description}</p>
                 </Card>
               ))}
             </div>

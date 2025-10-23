@@ -61,7 +61,7 @@ const Contact = () => {
         
         <div className="mt-12">
           <Button variant="hero" size="lg" asChild>
-            <a href="mailto:your.email@example.com">Send Me a Message</a>
+            <a href="mailto:diego.scirocco@gmail.com">Send Me a Message</a>
           </Button>
         </div>
       </div>
