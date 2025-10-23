@@ -4,34 +4,34 @@ import { Award } from "lucide-react";
 const About = () => {
   const certifications = [
     {
-      title: "Certification Name 1",
-      issuer: "Issuing Organization",
-      date: "2024"
+      title: "Google Cloud Computing Foundations Certificate",
+      issuer: "Google",
+      date: "2025"
     },
     {
-      title: "Certification Name 2",
-      issuer: "Issuing Organization",
-      date: "2024"
+      title: "AWS Cloud Quest: Cloud Practitioner",
+      issuer: "AWS",
+      date: "2025"
     },
     {
-      title: "Certification Name 3",
-      issuer: "Issuing Organization",
-      date: "2023"
+      title: "OCI 2025 Certified Generative AI Professional",
+      issuer: "Oracle",
+      date: "2025"
     },
     {
-      title: "Certification Name 4",
-      issuer: "Issuing Organization",
-      date: "2023"
+      title: "Cisco CCNA: Routing and Switching ",
+      issuer: "Cisco",
+      date: "2020"
     },
     {
-      title: "Certification Name 5",
-      issuer: "Issuing Organization",
-      date: "2022"
+      title: "Cisco: Introduction to Cybersecurity",
+      issuer: "Cisco",
+      date: "2020"
     },
     {
-      title: "Certification Name 6",
-      issuer: "Issuing Organization",
-      date: "2022"
+      title: "Data Fundamentals",
+      issuer: "IBM",
+      date: "2025"
     }
   ];
 
@@ -59,11 +59,6 @@ const About = () => {
         </div>
         
         <div className="mt-16 text-center">
-          <p className="text-lg text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            With experience in modern web technologies, I specialize in building scalable applications 
-            that prioritize user experience and performance. I'm always eager to learn new technologies 
-            and take on challenging projects that push my skills forward.
-          </p>
         </div>
       </div>
     </section>

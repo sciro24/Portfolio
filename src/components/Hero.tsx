@@ -36,15 +36,15 @@ const Hero = () => {
         </div>
         
         <div className="flex gap-4 justify-center pt-8">
-          <a href="https://github.com" target="_blank" rel="noopener noreferrer" 
+          <a href="https://github.com/sciro24" target="_blank" rel="noopener noreferrer" 
              className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300">
             <Github className="w-6 h-6" />
           </a>
-          <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+          <a href="https://www.linkedin.com/in/diego-scirocco/" target="_blank" rel="noopener noreferrer"
              className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300">
             <Linkedin className="w-6 h-6" />
           </a>
-          <a href="mailto:your.email@example.com"
+          <a href="mailto:diego.scirocco@gmail.com"
              className="p-3 rounded-full border border-border hover:border-primary hover:bg-primary/5 transition-all duration-300">
             <Mail className="w-6 h-6" />
           </a>

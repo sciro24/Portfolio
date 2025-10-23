@@ -8,41 +8,41 @@ const Contact = () => {
       <div className="max-w-4xl mx-auto text-center">
         <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
         <p className="text-muted-foreground mb-12 max-w-2xl mx-auto">
-          I'm always open to discussing new projects, creative ideas, or opportunities to be part of your vision.
+          I'm always open to discussing new projects, creative ideas or opportunities to be part of your vision.
         </p>
         
         <Card className="p-8">
           <div className="grid md:grid-cols-2 gap-6">
-            <a href="mailto:your.email@example.com" 
+            <a href="mailto:diego.scirocco@gmail.com" 
                className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted transition-colors">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <Mail className="w-6 h-6 text-primary" />
               </div>
               <div className="text-left">
                 <h3 className="font-semibold">Email</h3>
-                <p className="text-sm text-muted-foreground">your.email@example.com</p>
+                <p className="text-sm text-muted-foreground">diego.scirocco@gmail.com</p>
               </div>
             </a>
             
-            <a href="https://github.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://github.com/sciro24" target="_blank" rel="noopener noreferrer"
                className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted transition-colors">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <Github className="w-6 h-6 text-primary" />
               </div>
               <div className="text-left">
                 <h3 className="font-semibold">GitHub</h3>
-                <p className="text-sm text-muted-foreground">@yourusername</p>
+                <p className="text-sm text-muted-foreground">@sciro24</p>
               </div>
             </a>
             
-            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer"
+            <a href="https://www.linkedin.com/in/diego-scirocco/" target="_blank" rel="noopener noreferrer"
                className="flex items-center gap-4 p-4 rounded-lg hover:bg-muted transition-colors">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <Linkedin className="w-6 h-6 text-primary" />
               </div>
               <div className="text-left">
                 <h3 className="font-semibold">LinkedIn</h3>
-                <p className="text-sm text-muted-foreground">Your Name</p>
+                <p className="text-sm text-muted-foreground">Diego Sciroco</p>
               </div>
             </a>
             

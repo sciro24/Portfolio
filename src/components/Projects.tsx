@@ -6,32 +6,29 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "Full-stack e-commerce solution with payment integration and admin dashboard",
-      tags: ["React", "Node.js", "PostgreSQL", "Stripe"],
-      github: "https://github.com",
-      demo: "https://demo.com"
+      title: "Cancer Treatment ML",
+      description: "Personalized Medicine: Redefining Cancer Treatment ",
+      tags: ["Python", "ML", "Jupyter"],
+      github: "https://github.com/sciro24/Cancer_Treatment_ML",
     },
     {
-      title: "Task Management App",
-      description: "Collaborative task manager with real-time updates and team features",
-      tags: ["TypeScript", "React", "Supabase", "Tailwind"],
-      github: "https://github.com",
-      demo: "https://demo.com"
+      title: "EEG Emotion Art Generator",
+      description: "EEG Emotion Classification and Artistic Generation Integration ",
+      tags: ["Python", "Jupyter", "Colab", "TensorFlow", "Keras"],
+      github: "https://github.com/sciro24/EEG_Emotion_Art_Generator",
+  
     },
     {
-      title: "Portfolio Generator",
-      description: "Tool to automatically generate beautiful portfolios from GitHub data",
-      tags: ["Next.js", "API", "Vercel", "CSS"],
-      github: "https://github.com",
-      demo: "https://demo.com"
+      title: "Kathara Networks IDC",
+      description: "Kathará lab exercises developed for the Internet and Data Centers course at Roma Tre University.",
+      tags: ["Kathara", "Networking", "Shell", "Docker"],
+      github: "https://github.com/sciro24/Kathara_Networks_IDC",
     },
     {
-      title: "Weather Dashboard",
-      description: "Real-time weather tracking with forecasts and interactive maps",
-      tags: ["React", "OpenWeather API", "Charts", "PWA"],
-      github: "https://github.com",
-      demo: "https://demo.com"
+      title: "SmellTrigger VR",
+      description: "Immersive VR Project with Aromatic Diffusion",
+      tags: ["VR", "Meta", "Unity", "Meta Quest"],
+      github: "https://github.com/sciro24/SmellTrigger_VR",
     }
   ];
 
@@ -56,12 +53,6 @@ const Projects = () => {
                        className="opacity-0 group-hover:opacity-100 transition-opacity">
                       <Button size="icon" variant="ghost">
                         <Github className="w-4 h-4" />
-                      </Button>
-                    </a>
-                    <a href={project.demo} target="_blank" rel="noopener noreferrer"
-                       className="opacity-0 group-hover:opacity-100 transition-opacity">
-                      <Button size="icon" variant="ghost">
-                        <ExternalLink className="w-4 h-4" />
                       </Button>
                     </a>
                   </div>
