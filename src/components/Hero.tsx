@@ -9,16 +9,15 @@ const Hero = () => {
       <div className="max-w-4xl mx-auto text-center space-y-8 animate-fade-in">
         <div className="space-y-4">
           <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
-            Hi, I'm <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Your Name</span>
+            Hi, I'm <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Diego</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground">
-            Full Stack Developer & Creative Problem Solver
+            AI/ML Engineer
           </p>
         </div>
         
         <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-          I build beautiful, functional web applications with modern technologies. 
-          Passionate about clean code, user experience, and continuous learning.
+           MSc Student in AI & ML (LM-32) | Focused on integrating machine learning with networked and cloud-based infrastructures to enhance system intelligence. 
         </p>
         
         <div className="flex flex-wrap gap-4 justify-center pt-4">
@@ -28,11 +27,11 @@ const Hero = () => {
           <Button variant="outline" size="lg" asChild>
             <a href="#contact">Get in Touch</a>
           </Button>
-          <Button variant="secondary" size="lg" asChild>
-            <a href="/cv.pdf" download>
-              <FileText className="w-5 h-5" />
-              Download CV
-            </a>
+          <Button variant="hero" size="lg" asChild>
+              <a href="/Portfolio/cv.pdf" download>
+                <FileText className="w-5 h-5" />
+                Download CV
+              </a>
           </Button>
         </div>
         
