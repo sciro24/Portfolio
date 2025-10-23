@@ -25,19 +25,23 @@ const Experience = () => {
 
   const education = [
     {
-      degree: "Master's Degree, IA/ML ",
+      degree: "Master's Degree",
       institution: "Università degli Studi Roma Tre",
       period: "2024 - Present",
+      description: "Curriculum: AI & ML"
+
     },
     {
       degree: "Bachelor's Degree, Computer Engineering",
       institution: "Università degli Studi Roma Tre",
       period: "2020 - 2024",
+      description: "Computer Engineering"
     },
     {
-      degree: "Computer Technical Diploma",
+      degree: "Diploma",
       institution: "ITC Vincenzo Arangio Ruiz",
       period: "2015 - 2020",
+      description: "Computer Technical "
     }
   ];
 
@@ -86,6 +90,7 @@ const Experience = () => {
                   <h4 className="text-lg font-semibold mb-1">{edu.degree}</h4>
                   <p className="text-sm text-accent font-medium mb-2">{edu.institution}</p>
                   <p className="text-xs text-muted-foreground mb-3">{edu.period}</p>
+                  <p className="text-sm text-muted-foreground">{edu.description}</p>
                 </Card>
               ))}
             </div>
