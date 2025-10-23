@@ -1,0 +1,103 @@
+import { Card } from "@/components/ui/card";
+import { Briefcase, GraduationCap } from "lucide-react";
+
+const Experience = () => {
+  const workExperiences = [
+    {
+      title: "Job Title",
+      company: "Company Name",
+      period: "2023 - Present",
+      description: "Brief description of responsibilities and achievements"
+    },
+    {
+      title: "Job Title",
+      company: "Company Name",
+      period: "2021 - 2023",
+      description: "Brief description of responsibilities and achievements"
+    },
+    {
+      title: "Job Title",
+      company: "Company Name",
+      period: "2019 - 2021",
+      description: "Brief description of responsibilities and achievements"
+    }
+  ];
+
+  const education = [
+    {
+      degree: "Degree Name",
+      institution: "University/School Name",
+      period: "2020 - 2024",
+      description: "Field of study and notable achievements"
+    },
+    {
+      degree: "Degree Name",
+      institution: "University/School Name",
+      period: "2018 - 2020",
+      description: "Field of study and notable achievements"
+    },
+    {
+      degree: "Degree Name",
+      institution: "University/School Name",
+      period: "2015 - 2018",
+      description: "Field of study and notable achievements"
+    }
+  ];
+
+  return (
+    <section id="experience" className="py-20 px-6 bg-muted/30">
+      <div className="max-w-6xl mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">Formazioni ed Esperienze</h2>
+          <p className="text-muted-foreground max-w-2xl mx-auto">
+            Il mio percorso professionale e formativo
+          </p>
+        </div>
+        
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Work Experience */}
+          <div>
+            <div className="flex items-center gap-2 mb-6">
+              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center">
+                <Briefcase className="w-5 h-5 text-primary" />
+              </div>
+              <h3 className="text-2xl font-bold">Esperienze</h3>
+            </div>
+            <div className="space-y-4">
+              {workExperiences.map((exp, index) => (
+                <Card key={index} className="p-5 hover:shadow-lg transition-shadow duration-300">
+                  <h4 className="text-lg font-semibold mb-1">{exp.title}</h4>
+                  <p className="text-sm text-primary font-medium mb-2">{exp.company}</p>
+                  <p className="text-xs text-muted-foreground mb-3">{exp.period}</p>
+                  <p className="text-sm text-muted-foreground">{exp.description}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+
+          {/* Education */}
+          <div>
+            <div className="flex items-center gap-2 mb-6">
+              <div className="w-10 h-10 rounded-lg bg-accent/10 flex items-center justify-center">
+                <GraduationCap className="w-5 h-5 text-accent" />
+              </div>
+              <h3 className="text-2xl font-bold">Formazioni</h3>
+            </div>
+            <div className="space-y-4">
+              {education.map((edu, index) => (
+                <Card key={index} className="p-5 hover:shadow-lg transition-shadow duration-300">
+                  <h4 className="text-lg font-semibold mb-1">{edu.degree}</h4>
+                  <p className="text-sm text-accent font-medium mb-2">{edu.institution}</p>
+                  <p className="text-xs text-muted-foreground mb-3">{edu.period}</p>
+                  <p className="text-sm text-muted-foreground">{edu.description}</p>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Experience;
