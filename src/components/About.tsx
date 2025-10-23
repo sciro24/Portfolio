@@ -1,37 +1,51 @@
 import { Card } from "@/components/ui/card";
-import { Award } from "lucide-react";
+// Non è più necessaria l'icona Award se si usano i loghi specifici
+// import { Award } from "lucide-react";
+
+// Importa i loghi direttamente
+import googleLogo from '/logos/google.png';
+import awsLogo from '/logos/aws.png';
+import oracleLogo from '/logos/oracle.png';
+import ciscoLogo from '/logos/cisco.png';
+import ibmLogo from '/logos/ibm.png';
 
 const About = () => {
   const certifications = [
     {
       title: "Google Cloud Computing Foundations Certificate",
       issuer: "Google",
-      date: "2025"
+      date: "2025",
+      logo: googleLogo
     },
     {
       title: "AWS Cloud Quest: Cloud Practitioner",
       issuer: "AWS",
-      date: "2025"
+      date: "2025",
+      logo: awsLogo
     },
     {
       title: "OCI 2025 Certified Generative AI Professional",
       issuer: "Oracle",
-      date: "2025"
+      date: "2025",
+      logo: oracleLogo
     },
     {
       title: "Cisco CCNA: Routing and Switching ",
       issuer: "Cisco",
-      date: "2020"
+      date: "2020",
+      logo: ciscoLogo
     },
     {
       title: "Cisco: Introduction to Cybersecurity",
       issuer: "Cisco",
-      date: "2020"
+      date: "2020",
+      logo: ciscoLogo
     },
     {
       title: "Data Fundamentals",
       issuer: "IBM",
-      date: "2025"
+      date: "2025",
+      logo: ibmLogo
     }
   ];
 
@@ -47,10 +61,8 @@ const About = () => {
         
         <div className="grid md:grid-cols-3 gap-4">
           {certifications.map((cert, index) => (
-            <Card key={index} className="p-4 hover:shadow-lg transition-shadow duration-300">
-              <div className="w-10 h-10 rounded-lg bg-primary/10 flex items-center justify-center mb-3">
-                <Award className="w-5 h-5 text-primary" />
-              </div>
+            <Card key={index} className="p-4 hover:shadow-lg transition-shadow duration-300 flex flex-col items-center text-center">
+              <img src={cert.logo} alt={`${cert.issuer} logo`} className="w-10 h-10 object-contain mb-3" />
               <h3 className="text-lg font-semibold mb-1">{cert.title}</h3>
               <p className="text-sm text-muted-foreground">{cert.issuer}</p>
               <p className="text-xs text-muted-foreground mt-1">{cert.date}</p>
