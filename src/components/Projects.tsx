@@ -38,7 +38,7 @@ const Projects = () => {
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Featured Projects</h2>
           <p className="text-muted-foreground max-w-2xl mx-auto">
-            A selection of projects showcasing my skills and experience
+            A selection of my GitHub projects, showcasing my skills and experience.
           </p>
         </div>
         
@@ -49,8 +49,7 @@ const Projects = () => {
                 <CardTitle className="flex items-center justify-between">
                   <span>{project.title}</span>
                   <div className="flex gap-2">
-                    <a href={project.github} target="_blank" rel="noopener noreferrer"
-                       className="opacity-0 group-hover:opacity-100 transition-opacity">
+                    <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <Button size="icon" variant="ghost">
                         <Github className="w-4 h-4" />
                       </Button>

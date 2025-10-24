@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Github, Linkedin, Mail, FileText } from "lucide-react";
+import { Github, Linkedin, Mail, FileText, Rocket, Send } from "lucide-react";
 import profilePic from "/profile.png"; // Importa l'immagine del profilo
 
 const Hero = () => {
@@ -16,7 +16,7 @@ const Hero = () => {
           />
         </div>
         <div className="space-y-2">
-          <h1 className="text-5xl md:text-7xl font-bold tracking-tight">
+          <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
             Hi, I'm <span className="bg-gradient-to-r from-primary to-accent bg-clip-text text-transparent">Diego</span>
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground">
@@ -30,14 +30,20 @@ const Hero = () => {
         
         <div className="flex flex-wrap gap-4 justify-center pt-4">
           <Button variant="hero" size="lg" asChild>
-            <a href="#projects">View Projects</a>
+            <a href="#projects">
+              <Rocket className="w-4 h-4 mr-2" />
+              View Projects
+            </a>
           </Button>
-          <Button variant="outline" size="lg" asChild>
-            <a href="#contact">Get in Touch</a>
+          <Button variant="hero" size="lg" asChild>
+            <a href="#contact">
+              <Send className="w-4 h-4 mr-2" />
+              Get in Touch
+            </a>
           </Button>
           <Button variant="hero" size="lg" asChild>
               <a href="/Portfolio/cv.pdf" download>
-                <FileText className="w-5 h-5" />
+                <FileText className="w-4 h-4 mr-2" />
                 Download CV
               </a>
           </Button>
