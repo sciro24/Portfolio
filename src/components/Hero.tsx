@@ -42,7 +42,7 @@ const Hero = () => {
             </a>
           </Button>
           <Button variant="hero" size="lg" asChild>
-              <a href="/Portfolio/cv.pdf" download>
+              <a href="/Portfolio/CV Diego Scirocco.pdf" download>
                 <FileText className="w-4 h-4 mr-2" />
                 Download CV
               </a>

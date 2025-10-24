@@ -46,7 +46,7 @@ const Contact = () => {
               </div>
             </a>
             
-            <a href="/Portfolio/cv.pdf" download
+            <a href="/Portfolio/CV Diego Scirocco.pdf" download
                className="flex items-center gap-4 p-5 rounded-lg hover:bg-muted transition-colors">
               <div className="w-12 h-12 rounded-full bg-primary/10 flex items-center justify-center">
                 <FileText className="w-6 h-6 text-primary" />
